@@ -1,0 +1,124 @@
+/*
+
+CSS rules you may need for reference:
+
+- font-family
+    - Arial, sans-serif
+- line-height
+- color
+- margin
+- padding
+- background-color
+- border-radius
+- border-left
+- border-bottom
+- margin-top
+- padding-left
+- padding-bottom
+- width
+- height
+- margin-bottom
+- font-size
+
+*/
+
+/* Write your CSS code here */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  animation-name: test;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes test {
+  0% {
+    background-color: lightblue;
+  }
+  25% {
+    background-color: bisque;
+  }
+  50% {
+    background-color: lightcyan;
+  }
+  75% {
+    background-color: beige;
+  }
+  100% {
+    background-color: azure;
+  }
+}
+
+main {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: #008cff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h2 {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border-left: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
+p::first-letter {
+  color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+section {
+  background-color: #fafafa;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  scale: 1;
+  transition: scale 0.25s;
+}
+
+img:hover {
+  transition: scale 0.25s;
+  scale: 1.01;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+tbody tr:nth-child(even) {
+  transition: background-color 0.25s;
+  background-color: #dbdbdb;
+}
+
+tbody tr:first-child {
+  color: white;
+  background-color: #008cff;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tbody tr + tr:hover {
+  cursor: pointer;
+  background-color: grey;
+  transition: background-color 0.25s;
+}
